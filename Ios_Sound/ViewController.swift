@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     
     @IBAction func stopBtn(_ sender: UIButton) {
         player.stop()
+        timer.invalidate()
+        player.currentTime=0
 
     }
 
@@ -42,6 +44,7 @@ class ViewController: UIViewController {
         player.play()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector:
             #selector(updateScrubber), userInfo: nil, repeats: true)
+    
     }
     
     
@@ -51,12 +54,18 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func seekSlider(_ sender: UISlider) {
+        player.currentTime = TimeInterval(trackSeek.value)
+        player.play()
+        
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         do{
             player = try AVAudioPlayer(contentsOf:URL(fileURLWithPath: path!))
+            trackSeek.maximumValue=Float(player.duration)
         }
         catch{
             print(error)
