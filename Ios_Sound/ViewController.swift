@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     
     @IBAction func stopBtn(_ sender: UIButton) {
         player.stop()
+
     }
 
    
