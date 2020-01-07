@@ -26,6 +26,7 @@
                                 <rect key="frame" x="21" y="448" width="354" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="seek:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Vs-FX-uNi"/>
                                     <action selector="seekSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="qfm-me-Ue3"/>
                                 </connections>
                             </slider>

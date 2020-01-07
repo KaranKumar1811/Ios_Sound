@@ -13,9 +13,9 @@
 		9B2DB2E123C520280099C815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2DB2DF23C520280099C815 /* Main.storyboard */; };
 		9B2DB2E323C520280099C815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B2DB2E223C520280099C815 /* Assets.xcassets */; };
 		9B2DB2E623C520280099C815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2DB2E423C520280099C815 /* LaunchScreen.storyboard */; };
-		9B2DB2EE23C522B10099C815 /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B2DB2ED23C522B10099C815 /* explosion.mp3 */; };
 		9B2DB2F023C5257E0099C815 /* bach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B2DB2EF23C5257E0099C815 /* bach.mp3 */; };
 		9B2DB2F423C526560099C815 /* ck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B2DB2F323C526560099C815 /* ck.mp3 */; };
+		9B2DB2F823C539840099C815 /* dk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B2DB2F723C539840099C815 /* dk.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,10 @@
 		9B2DB2E223C520280099C815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B2DB2E523C520280099C815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B2DB2E723C520280099C815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B2DB2ED23C522B10099C815 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = explosion.mp3; path = ../../resources/sounds/explosion.mp3; sourceTree = "<group>"; };
 		9B2DB2EF23C5257E0099C815 /* bach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bach.mp3; sourceTree = "<group>"; };
 		9B2DB2F323C526560099C815 /* ck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ck.mp3; sourceTree = "<group>"; };
+		9B2DB2F623C5397B0099C815 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
+		9B2DB2F723C539840099C815 /* dk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dk.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +63,27 @@
 		9B2DB2D823C520280099C815 /* Ios_Sound */ = {
 			isa = PBXGroup;
 			children = (
+				9B2DB2F523C5396A0099C815 /* Songs */,
 				9B2DB2D923C520280099C815 /* AppDelegate.swift */,
 				9B2DB2DB23C520280099C815 /* SceneDelegate.swift */,
 				9B2DB2DD23C520280099C815 /* ViewController.swift */,
-				9B2DB2EF23C5257E0099C815 /* bach.mp3 */,
-				9B2DB2F323C526560099C815 /* ck.mp3 */,
-				9B2DB2ED23C522B10099C815 /* explosion.mp3 */,
 				9B2DB2DF23C520280099C815 /* Main.storyboard */,
 				9B2DB2E223C520280099C815 /* Assets.xcassets */,
 				9B2DB2E423C520280099C815 /* LaunchScreen.storyboard */,
 				9B2DB2E723C520280099C815 /* Info.plist */,
 			);
 			path = Ios_Sound;
+			sourceTree = "<group>";
+		};
+		9B2DB2F523C5396A0099C815 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				9B2DB2EF23C5257E0099C815 /* bach.mp3 */,
+				9B2DB2F323C526560099C815 /* ck.mp3 */,
+				9B2DB2F623C5397B0099C815 /* explosion.mp3 */,
+				9B2DB2F723C539840099C815 /* dk.mp3 */,
+			);
+			path = Songs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B2DB2EE23C522B10099C815 /* explosion.mp3 in Resources */,
+				9B2DB2F823C539840099C815 /* dk.mp3 in Resources */,
 				9B2DB2F023C5257E0099C815 /* bach.mp3 in Resources */,
 				9B2DB2F423C526560099C815 /* ck.mp3 in Resources */,
 				9B2DB2E623C520280099C815 /* LaunchScreen.storyboard in Resources */,
